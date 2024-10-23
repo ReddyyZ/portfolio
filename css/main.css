@@ -1,12 +1,15 @@
 :root {
   --gray-100: #0D0E11;
   --gray-200: #16181D;
+  --gray-250: #1A1D23;
   --gray-300: #292C34;
   --gray-400: #878EA1;
   --gray-500: #C0C4CE;
   --gray-600: #E2E4E9;
   --blue-500: #3996DB;
   --blue-200: #68AFE3;
+  --yellow: #F2C94C;
+  --orange: #F2994A;
 }
 
 * {
@@ -91,4 +94,138 @@ body {
   flex-direction: column;
   max-width: 600px;
   padding: 8px;
+}
+
+#projects {
+  padding-block: 24px;
+  padding-inline: 32px;
+  background-color: var(--gray-100);
+}
+
+#projects-title h2 {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+#project-list {
+  margin-top: 24px; 
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+}
+
+@media screen and (min-width: 700px){
+  #project-list {
+    justify-content: flex-start;
+  }
+
+  #projects {
+    padding-block: 36px;
+    padding-inline: 48px;
+  }
+}
+
+.project {
+  width: 300px;
+  border-radius: 6px;
+  background-color: var(--gray-200);
+  display: flex;
+  flex-direction: column;
+
+  h3 {
+    font-size: 24px;
+  }
+
+  & > img {
+    border-radius: 6px 6px 0 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--blue-200);
+  }
+  
+  .project-description {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--gray-600);
+  }
+
+  .project-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    div {
+      padding-inline: 8px;
+      padding-block: 4px;
+      background-color: var(--gray-300);
+      border-radius: 6px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+
+      p {
+        font-size: 14px;
+        font-weight: 600;
+        color: #FFFFFF;
+      }
+
+      i {
+        font-size: 20px;
+      }
+
+      .fa-react {
+        color: var(--blue-500);
+      }
+
+      .fa-square-js {
+        color: var(--yellow);
+      }
+
+      .fa-html5 {
+        color: var(--orange);
+      }
+
+      .fa-css3-alt {
+        color: var(--blue-500);
+      }
+    }
+  }
+
+  .empty {
+    width: 105px;
+    height: 30px;
+    background: rgb(41,44,52);
+    background: linear-gradient(292deg, rgba(41,44,52,1) 0%, rgba(26,29,35,1) 57%); 
+    border-radius: 4px;
+  }
+
+  .empty-image {
+    width: 300px;
+    height: 146px;
+    border-radius: 6px 6px 0 0;
+  }
+
+  .empty-title {
+    width: 154px;
+    height: 39px;
+  }
+
+  .empty-description {
+    width: 220px;
+    height: 70px;
+  }
+
+  .empty-technology:nth-child(4), .empty-technology:nth-child(5) {
+    width: 70px;
+  }
+
+  .disabled-link {
+    color: var(--gray-500);
+  }
 }
