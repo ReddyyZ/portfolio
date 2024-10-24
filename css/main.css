@@ -241,25 +241,14 @@ body {
   /* align-items: center; */
   color: var(--gray-600);
   text-decoration: none;
+  transition: transform .2s;
 
   i {
     color: var(--gray-600);
     font-size: 24px;
   }
-
-}
-
-@keyframes btn-scale-animation {
-  0% {
-    scale: 1;
-  }
-
-  100% {
-    scale: 1.2;
-  }
 }
 
 #scroll-btn:hover {
-  scale: 1.2;
-  animation: btn-scale-animation 0.2s;
+  transform: scale(1.2);
 }
