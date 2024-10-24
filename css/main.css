@@ -292,3 +292,80 @@ body {
 #scroll-btn:hover {
   transform: scale(1.2);
 }
+
+#contato {
+  padding-inline: 48px;
+  padding-block: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  h2 {
+    font-size: 20px;
+    color: var(--blue-200);
+    line-height: 1.6;
+    margin-bottom: 8px;
+  }
+}
+
+#contato-description {
+  text-align: center;
+  line-height: 1.6;
+  margin-bottom: 24px;
+
+  p:nth-child(1) { /* Text 1 */
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  p:nth-child(2) { /* Text 2 */
+    font-size: 16px;
+    /* margin-top: 8px; */
+  }
+}
+
+#lista-contatos {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contato-link {
+  width: 300px;
+  height: 54px;
+  padding-inline: 16px;
+  padding-block: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--gray-200);
+  border-radius: 6px;
+  border: 1px solid var(--gray-200);
+  text-decoration: none;
+
+  & > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    i {
+      font-size: 25px;
+    }
+
+    p {
+      /* font-weight: 600; */
+      font-size: 16px;
+    }
+  }
+}
+
+.contato-email {
+  justify-content: center;
+}
+
+.contato-link:hover {
+  transition: border 0.2s;
+  border: 1px solid var(--gray-600);
+}
