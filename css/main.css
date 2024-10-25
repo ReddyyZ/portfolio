@@ -234,16 +234,16 @@ body {
   }
 }
 
-.project:hover {
+.project:not(.empty-project):hover {
   /* border: 1px solid #fff; */
   transform: scale(1.02);
 }
 
-.project:not(:hover) {
+.project:not(.empty-project):not(:hover) {
   filter: grayscale(0.1);
 }
 
-.project:after {  
+.project:not(.empty-project):after {  
   content: "";
   height: 70px;
   width: 1px;  
@@ -261,12 +261,12 @@ body {
   opacity: 0;
 }
 
-.project:after {  
+.project:not(.empty-project):after {  
   top: 65%;
   opacity: 0;
 }
 
-.project:hover:after {
+.project:not(.empty-project):hover:after {
   top: 25%;
   opacity: 1;
 }
