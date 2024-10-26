@@ -5,7 +5,7 @@ Site desenvolvido para servir como meu portfólio, mostrando minhas habilidades 
 ![Website Mockup](/Project%20Mockup.jpg)
 >Mockup desenvolvido por mim no Figma
 
-[Acesse meu portfólio](https:/reddyyz.github.io/portfolio)
+[Acesse meu portfólio](https://reddyyz.github.io/portfolio)
 
 ## :phone: Contato:
 **Email:** [arthur.reddyyz.contact@gmail.com](mailto:arthur.reddyyz.contact@gmail.com)
