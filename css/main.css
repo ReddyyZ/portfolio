@@ -397,7 +397,7 @@ body {
   border-radius: 100%;
   font-size: 16px;
   border: 1px solid transparent;
-  transition: visibility 0.2s;
+  transition: opacity .2s;
 }
 
 #scroll-up-btn:hover, #scroll-up-btn:active {
@@ -408,5 +408,5 @@ body {
 
 .hidden {
   display: none;
-  visibility: hidden;
+  opacity: 0;
 }
