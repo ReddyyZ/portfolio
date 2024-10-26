@@ -337,7 +337,7 @@ body {
 }
 
 .contato-link {
-  width: 300px;
+  /* width: 300px; */
   height: 54px;
   padding-inline: 16px;
   padding-block: 8px;
