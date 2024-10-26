@@ -9,6 +9,7 @@ Site desenvolvido para servir como meu portfólio, mostrando minhas habilidades 
 
 ## :phone: Contato:
 **Email:** [arthur.reddyyz.contact@gmail.com](mailto:arthur.reddyyz.contact@gmail.com)
+
 **Linkedin:** [arthurc-oli](https://linkedin.com/arthurc-oli)
 
 ---
